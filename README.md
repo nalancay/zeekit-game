@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+### `Link WebSite`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Zeekit Game](https://nalancay-zeekitgame.netlify.app/).
 
-## Available Scripts
+In this assignment, a game is created in React called: "Guess the TV show name".
 
-In the project directory, you can run:
+## Gameplay and rules
 
-### `npm start`
+- The player will see a placeholder for a TV name with some missing letters. The player should guess and fill in TV show's name. If the player guesses successfully a tv show name, it gets a point and moves forward to guess another tv show name.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- The player would be able to use a hint feature in case it's stuck with a specific TV show.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- The player has a total of 3 life points. For each wrong guess, it loses a point. If the player lost all 3 points the game is over and can be started again.
 
-### `npm test`
+## App Requirements:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- API:
+  https://developers.themoviedb.org/3/getting-started/introduction
 
-### `npm run build`
+- fetch the data from here:
+  https://developers.themoviedb.org/3/tv/get-top-rated-tv
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## The main page contains
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Genereted TV name with missing letters to fill
+2. An input component, where the player enters its guess.
+3. "Check the guess" button.
+4. "Hint" button.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technical requirements
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Creative and responsive UI desing.
+2. Using Typescript.
+3. Simple code structure.
+4. Reusable, Clean, and declarative code.

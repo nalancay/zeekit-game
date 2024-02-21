@@ -43,17 +43,37 @@ export default function App() {
                 name="partial"
                 type="text"
               />
-              <button type="button" onClick={handleHint}>
-                Show hint
-              </button>
-              <button type="submit">Guess</button>
+              <div className="flex justify-center">
+                <div className="flex flex-col items-center">
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded-md w-32 mb-3"
+                    type="button"
+                    onClick={handleHint}
+                  >
+                    Show hint
+                  </button>
+                  <button
+                    className="bg-blue-500 text-white px-4 py-2 rounded-md w-32"
+                    type="submit"
+                  >
+                    Guess
+                  </button>
+                </div>
+              </div>
               {showHint && <p>{movie.overview}</p>}
             </form>
           </>
         ) : (
-          <div className="text-center p-4 grid gap-4">
-            <p className="text-xl"> Game Over</p>
-            <button onClick={handleReset}> Play again</button>
+          <div className="flex justify-center">
+            <div className="flex flex-col items-center">
+              <p className="text-xl"> Game Over</p>
+              <button
+                className="bg-blue-500 text-white px-4 py-2 rounded-md w-32 mt-3"
+                onClick={handleReset}
+              >
+                Play again
+              </button>
+            </div>
           </div>
         )}
       </section>
